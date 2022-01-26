@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const MovieDetail = ({title, year, desc, coverImg}) => {
   return(
     <div>
@@ -8,4 +10,11 @@ export const MovieDetail = ({title, year, desc, coverImg}) => {
     </div>
     
   )
+}
+
+MovieDetail.propsType = {
+  title: PropTypes.string.isRequired,
+  year: PropTypes.number.isRequired,
+  desc: PropTypes.string.isRequired,
+  coverImg: PropTypes.string.isRequired,
 }
